@@ -10,7 +10,7 @@ You have created and published a well-tested and well-documented project in Cloj
 
 ### Some ways to confirm this
 
-- If you've published to a git repo, you should be able to clone the project and [run its tests][how-to-test-your-project]
+- If you've published to a git repo, you should be able to clone the project and [run its tests].
 - If you've published a jar to [clojars](https://clojars.org/), you should be able to find it using clojar's search feature.
 
 
