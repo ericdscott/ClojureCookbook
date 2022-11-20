@@ -20,7 +20,7 @@ You have created and published a well-tested and well-documented project in Cloj
 - Develop your code
 - Write and execute tests with good coverage
 - Write clear documentation
-- Publish your code
+- Publish your code and other artifacts
 
-[run its tests]:http://example.com/ToTestYourProject.md
+[run its tests]:../ToRunTests.md
 
