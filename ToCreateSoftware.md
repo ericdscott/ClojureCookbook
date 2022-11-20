@@ -22,5 +22,5 @@ You have created and published a well-tested and well-documented project in Cloj
 - Write clear documentation
 - Publish your code and other artifacts
 
-[run its tests]:../ToRunTests.md
+[run its tests]:./ToRunTests.md
 
