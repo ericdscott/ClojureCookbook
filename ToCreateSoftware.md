@@ -15,12 +15,22 @@ You have created and published a well-tested and well-documented project in Cloj
 
 
 ## Otherwise
-- Create a clojure project
-- Manage dependencies for your project
-- Develop your code
-- Write and execute tests with good coverage
-- Write clear documentation
-- Publish your code and other artifacts
+- [Create a clojure project]
+- [Manage dependencies for your project]
+- [Develop your code]
+- [Write and execute tests with good coverage]
+- [Write clear documentation]
+- [Publish your code and other artifacts]
 
-[run its tests]:./ToRunTests.md
+## Special circumstances
+- [Converting a leiningen/project.clj to Clojure CLI/deps.edn]
 
+
+[Converting a leiningen/project.clj to Clojure CLI/deps.edn]:./ToConvertLeinToClojureCLI.md
+[Create a clojure project]:./ToCreateAClojureProject.md
+[Develop your code]:./ToDevelopYourCode.md
+[Manage dependencies for your project]:./ToManageDependencies.md
+[Publish your code and other artifacts]:./ToPublishYourCodeAndArtifacts.md
+[Write and execute tests with good coverage]:./ToWriteAndExecuteTests.md
+[Write clear documentation]:./ToManageDocumentation.md
+[run its tests]:./ToWriteAndExecuteTests.md

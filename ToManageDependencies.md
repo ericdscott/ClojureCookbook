@@ -1,6 +1,6 @@
-# To Run Tests
+# To Manage Dependencies
 
-watch this space.
+Watch this space.
 
 ## Done when
 
