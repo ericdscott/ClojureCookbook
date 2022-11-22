@@ -13,5 +13,10 @@ Each node in this cook book should be dedicated to a speicific kind of goal and 
   
 The entry point for this is [How to Create Software with Clojure].
 
+# Other similar resources
+
+- https://clojure-doc.org/articles/content/#tutorials-and-cookbooks
+- https://github.com/clojure-cookbook/clojure-cookbook
+- http://clojuredocs.org/
 
 [How to Create Software with Clojure]:./ToCreateSoftware.md

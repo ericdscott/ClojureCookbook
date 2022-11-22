@@ -21,12 +21,13 @@ You have created and published a well-tested and well-documented project in Cloj
 - [Write and execute tests with good coverage]
 - [Write clear documentation]
 - [Publish your code and other artifacts]
+- [Maintiain your project moving forward]
 
 ## Special circumstances
-- [Converting a leiningen/project.clj to Clojure CLI/deps.edn]
+- [Migrating a leiningen/project.clj to Clojure CLI/deps.edn]
 
 
-[Converting a leiningen/project.clj to Clojure CLI/deps.edn]:./ToConvertLeinToClojureCLI.md
+[Migrating a leiningen/project.clj to Clojure CLI/deps.edn]:./ToMigrateLeinToClojureCLI.md
 [Create a clojure project]:./ToCreateAClojureProject.md
 [Develop your code]:./ToDevelopYourCode.md
 [Manage dependencies for your project]:./ToManageDependencies.md
@@ -34,3 +35,4 @@ You have created and published a well-tested and well-documented project in Cloj
 [Write and execute tests with good coverage]:./ToWriteAndExecuteTests.md
 [Write clear documentation]:./ToManageDocumentation.md
 [run its tests]:./ToWriteAndExecuteTests.md
+[Maintiain your project moving forward]:./ToMaintainYourProject.md

@@ -1,5 +1,11 @@
 # To Create a Clojure Project
 
+## Contents
+- [Supports](#supports)
+- [Done when](#done-when)
+- [Otherwise](#otherwise)
+- [Associated tools](#associated-tools)
+
 The first step in developing a software is to create a project in your
 dev environment.
 
@@ -11,14 +17,16 @@ projects, and indeed may developers continue to do so.
 
 There are also several different kinds of projects you may want to
 create, some of which might be:
-- An application with a command-line interface (CLI)
+- An Java application with a command-line interface (CLI)
 - A library, intended to inform other applications
 - A web application
+
+Each of these kinds of projects will typically be initialized in different ways.
 
 ## Supports
 - [Writing Software with Clojure]
 
-## Done when:
+## Done when...
 
 - You have a minimal set of supporting code and configuration for your project.
 - Said configuration informs your build tool enough that it can do its job.
@@ -31,31 +39,107 @@ create, some of which might be:
 ## Otherwise
 - Navigate to your dev directory
 - Continue per one of the options described below.
+    - [To create a library project](#to-create-a-library-project)
+        - [With `neil` under the Clojure CLI](#with-neil-under-the-clojure-cli-lib)
+    - [To create a Java application project](#to-create-a-java-application-project)
+        - [With `neil` under the Clojure CLI](#with-neil-under-the-clojure-cli-app)
+    - [To create a web application project](#to-create-a-web-application-project)
+        
 
 ### To create a library project
-#### With `neil` under the Clojure CLI
-- [Configure your dev environment] per the
-  [README](https://github.com/babashka/neil/blob/main/README.md) for
-  neil
-- enter `clojure -M:neil new lib MyLib` to establish a new project
 
-### To create a CLI application project
+<a name=with-neil-under-the-clojure-cli-lib></a>
 #### With `neil` under the Clojure CLI
+  
 - [Configure your dev environment] per the
-  [README](https://github.com/babashka/neil/blob/main/README.md) for neil
-- enter `clojure -M:neil new app MyApp` to establish a new project
+  [README](https://github.com/babashka/neil/blob/main/README.md#clojure) for
+  neil
+- enter `clojure -M:neil new lib MyStuff/MyLib` to establish a new project
+
+##### Follow-up
+
+Your directory tree should look like this:
+
+```
+$ tree
+
+.
+├── build.clj
+├── CHANGELOG.md
+├── deps.edn
+├── doc
+│   └── intro.md
+├── LICENSE
+├── pom.xml
+├── README.md
+├── resources
+├── src
+│   └── MyStuff
+│       └── MyLib.clj
+└── test
+    └── MyStuff
+        └── MyLib_test.clj
+
+6 directories, 9 files
+```
+
+### To create a Java application project
+
+<a name=with-neil-under-the-clojure-cli-app></a>
+#### With `neil` under the Clojure CLI
+
+- [Configure your dev environment] per the
+  [README](https://github.com/babashka/neil/blob/main/README.md#clojure) for neil
+- enter `clojure -M:neil new app MyStuff/MyApp` to establish a new project
+- cd MyApp
+
+##### Follow-up
+
+Your directory structure should look like this:
+```
+$ tree
+
+├── build.clj
+├── CHANGELOG.md
+├── deps.edn
+├── doc
+│   └── intro.md
+├── LICENSE
+├── pom.xml
+├── README.md
+├── resources
+├── src
+│   └── MyStuff
+│       └── MyApp.clj
+└── test
+    └── MyStuff
+        └── MyApp_test.clj
+6 directories, 9 files
+```
 
 ### To create a web application project
+
 - Watch this space for discusson of [Luminus] and [kit-clj].
 
 ## Associated tools
 - [Clojure CLI]
+  - The official Clojure dependency manager
 - [Leiningen]
+  - An old reliable project manager that has lots of buy-in and associated tooling
 - [Boot] 
+  - A competitor to Leiningen. People say it gives you a lot more control over the details
 - [deps-new](https://github.com/seancorfield/deps-new/)
-- [neil](https://github.com/babashka/neil). 
+  - A tool to be used under the Clojure CLI to build new projects
+- [neil](https://github.com/babashka/neil)
+  - A tool to be used under the Clojure CLI to do a bunch of things. Wraps `deps-new`.
 - [Luminus]
-
+  - A framework for developing web applications
+  - Lots of plug-ins to do stuff like interact with databases
+  - Kind of Leiningen-centric
+- [kit-clj]
+  - A newer framework being developed by the author of Luminus
+  - Clojure CLI-centric
+  
 ---
 [Boot]:https://boot-clj.github.io/
 [Clojure CLI]:https://clojure.org/guides/deps_and_cli
