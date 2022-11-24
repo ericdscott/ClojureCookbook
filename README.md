@@ -18,5 +18,6 @@ The entry point for this is [How to Create Software with Clojure].
 - https://clojure-doc.org/articles/content/#tutorials-and-cookbooks
 - https://github.com/clojure-cookbook/clojure-cookbook
 - http://clojuredocs.org/
+- https://rosettacode.org/wiki/Category:Clojure
 
 [How to Create Software with Clojure]:./ToCreateSoftware.md

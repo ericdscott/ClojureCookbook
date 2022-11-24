@@ -1,8 +1,8 @@
 # To Convert Leiningen Projects to Clojure CLI deps.edn projects
 
-You may have a project working under Leiningen, but feel that the
-trend is toward the Clojure CLI, you may want to refactor your
-project.
+If you have a project working under Leiningen, but feel that the trend
+is shifting toward the Clojure CLI, you may want to refactor your
+project accordingly.
 
 [This post by Sean Corfield] discusses why his team transitioned to the Clojure CLI.
 

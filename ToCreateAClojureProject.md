@@ -41,10 +41,12 @@ Each of these kinds of projects will typically be initialized in different ways.
 - Continue per one of the options described below.
     - [To create a library project](#to-create-a-library-project)
         - [With `neil` under the Clojure CLI](#with-neil-under-the-clojure-cli-lib)
+        - (Watch this space for leiningen)
     - [To create a Java application project](#to-create-a-java-application-project)
         - [With `neil` under the Clojure CLI](#with-neil-under-the-clojure-cli-app)
+        - (Watch this space for leiningen)
     - [To create a web application project](#to-create-a-web-application-project)
-        
+            
 
 ### To create a library project
 

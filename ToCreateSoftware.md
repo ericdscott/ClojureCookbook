@@ -6,7 +6,7 @@ Watch this space for pointers to some good articles on that.
 
 ## Done when:
 
-You have created and published a well-tested and well-documented project in Clojue.
+You have created and published a well-tested and well-documented project in Clojure.
 
 ### Some ways to confirm this
 

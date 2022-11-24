@@ -19,21 +19,22 @@ This is largely subjective, but factors to consider are... (watch this space).
 
 - Under the Clojure CLI
   - [Install the Clojure CLI]
-  - [Identify apppriate utiity] to enhance your programming experience
+  - [Identify apppropriate utiities] to enhance your programming experience
   - Documentation for this utility should tell you whether is is
     invoked with a `-M` `-X` `-A` or `-T` option
-    - These options vary as to whether your local project's classpath
+    - These options vary according to whether your local project's classpath
       is involved, how the entry point in the code is selected, and
       how arguments are passed
   - Options:
     - If the tool in question invoked with an `-X`, `-M` or `-A`
-      argument (the docs should tell you):
+      argument:
       - [Define an alias] in your `~/clojure/deps.edn` for said utility.
-        - Aliases declared in this file will be available everywhere on your computer.
+        - Aliases declared in this file will be available everywhere on your computer
     - If the utility in question is invoked with a `-T` option 
+      - Inspect the set of installed tools with `clojure -Ttools list`
       - [Install the tool] with `clojure -Ttool install ...`
 
 [Define an alias]:./ToDefineAnAliasInDepsEdn.md
-[Identify apppriate tools]:./ToIdentifyDevelopmentTools.md
+[Identify apppropriate utiities]:./ToIdentifyDevelopmentTools.md
 [Install the Clojure CLI]:./ToInstallTheClojureCli.md
 [Install the tool]:./ToInstallClojureCLITool.md
