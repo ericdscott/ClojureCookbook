@@ -2,7 +2,7 @@
 
 Clojure is a very expressive medium with which to create software.
 
-Watch this space for pointers to some good articles on that.
+[Watch this space](https://github.com/ericdscott/ClojureCookbook/issues/14) for pointers to some good articles on that.
 
 ## Done when:
 
@@ -23,11 +23,7 @@ You have created and published a well-tested and well-documented project in Cloj
 - [Publish your code and other artifacts]
 - [Maintiain your project moving forward]
 
-## Special circumstances
-- [Migrating a leiningen/project.clj to Clojure CLI/deps.edn]
 
-
-[Migrating a leiningen/project.clj to Clojure CLI/deps.edn]:./ToMigrateLeinToClojureCLI.md
 [Create a clojure project]:./ToCreateAClojureProject.md
 [Develop your code]:./ToDevelopYourCode.md
 [Manage dependencies for your project]:./ToManageDependencies.md

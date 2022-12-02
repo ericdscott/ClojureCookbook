@@ -1,6 +1,6 @@
 # To Run Tests
 
-watch this space.
+[watch this space](https://github.com/ericdscott/ClojureCookbook/issues/11).
 
 ## Supports
 - [Maintaining a testing regime]

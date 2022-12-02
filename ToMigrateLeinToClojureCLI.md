@@ -12,7 +12,8 @@ https://clojureverse.org/t/is-there-a-sales-pitch-for-switching-to-deps-edn-from
 - [Maintaining your project]
 
 ## Done when
-A previously working project using a leiningen project.clj file now works under the clojure CLI.
+A previously working project using a leiningen project.clj file now
+works under the clojure CLI.
 
 ### Some ways to confirm this
 
@@ -22,23 +23,23 @@ A previously working project using a leiningen project.clj file now works under 
 
 ## Otherwise
 - [Install the Clojure CLI] as needed
+- [Create and adapt your deps.edn file]
+- [Define a build.clj file](#to-define-build-clj-file)
+- Consider defining a Makefile or Babashka tasks for common build tasks
+
+
+### To create and adapt your deps.edn file
 - Options:
   - Follow the [directions from practical.li]
   - [Use depify](#to-use-depify) and clean up the output
-- Copy the source for [build.clj](#build.clj) below into a local
-  `build.clj`
-- Adapt the `lib` and `version` variables in `build.clj` to your project
-- Add the [`:build` alias] below into your `deps.edn`
-- If clojurescript is a dependency
-  - Add the [`:cljs-test` alias] below into your `deps.edn`
+
   
-  
-### To Use depfiy
+#### To Use depfiy
 
 - [Configure your dev environment] to use the [depify-alias](#depify-alias) below
 - In your project directory enter `$ clojure -M:depify > deps.edn`
 
-#### depify-alias
+##### depify-alias
 
 ```
 { :aliases :depify
@@ -50,7 +51,7 @@ A previously working project using a leiningen project.clj file now works under 
 }
 ```
 
-### `:build` alias
+#### `:build` alias
 
 Put this in your project `deps.edn` to reference `build.clj`
 
@@ -69,7 +70,36 @@ Put this in your project `deps.edn` to reference `build.clj`
 }                   
 ```
 
-### build.clj
+<a name=to-define-build-clj-file></a>
+### To define a build.clj file
+
+The `build.clj` file is clojure tool placed at the top-level (and off
+the classpath) dedicated to the usual build tasks. They are typcically
+supported ultimately by `clojure.tools.build.api`. There are at least
+two common approaches to this. 
+
+Sean Corfield's clj-new tooling generates a build file automatically
+when you create a new project, and there may be advantages to back-filling existing libraries to maintain a consistent approach.
+
+Neil provides an `add build` operation which automatcally generates a
+build file with different naming conventions and coverage.
+
+- Options:
+  - [Base your build.clj file on Sean Corfield's deps-new tooling](#deps-new-build)
+  - [Base your build.clj on `neil`'s `add build`](#neil-build)
+  
+<a name=deps-new-build></a>
+#### To base your build.clj file on Sean Corfield's deps-new tooling
+
+- Copy the source for [build.clj](#build.clj) below into a local
+  `build.clj`
+- Adapt the `lib` and `version` variables in `build.clj` to your project
+- Add the [`:build` alias] below into your `deps.edn`
+- If clojurescript is a dependency
+  - Add the [`:cljs-test` alias] below into your `deps.edn`
+  
+
+##### build.clj
 
 This is source for a build tool to put in your project at toplevel.
 
@@ -126,7 +156,7 @@ This is source for a build tool to put in your project at toplevel.
 
 
 ```
-### `:cljs-test` alias
+#### `:cljs-test` alias
 
 Add this alias to your `deps.edn` to support clojurescript tests
 
@@ -143,12 +173,24 @@ Add this alias to your `deps.edn` to support clojurescript tests
 }
 ```
 
+<a name=neil-build></a>
+#### To base your build.clj on `neil`'s `add build`
+
+- [Configure your dev environment] for neil
+- Navigate to your dev directory
+- Enter `clojure -M:neil add build`
+- Adapt the `lib` and `version` variables
+
+This produces functions for `clean`, `jar`, and `uber`. You may want
+to adapt the testing code from other recipes to fill this out.
+
 ## Other tools
 - [lein-tools-deps]
   - Lets you reference deps in your `project.clj`
 - [lein-to-deps]
 
 
+[Adapt your deps.edn file]:#adapt-your-deps-edn-file
 [Configure your dev environment]:ToConfigureYourDevEnvironment.md
 [Install the Clojure CLI]:./ToInstallTheClojureCli.md
 [Maintaining your project]:./ToMaintainYourProject.md
@@ -158,4 +200,4 @@ Add this alias to your `deps.edn` to support clojurescript tests
 [directions from practical.li]:https://practical.li/clojure/alternative-tools/clojure-cli/migrating-to-clojure-cli-tools.html
 [lein-to-deps]:https://github.com/EwenG/lein-to-deps
 [lein-tools-deps]: https://github.com/RickMoynihan/lein-tools-deps
-
+[neil]:https://github.com/babashka/neil

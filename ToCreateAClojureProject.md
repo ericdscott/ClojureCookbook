@@ -20,6 +20,7 @@ create, some of which might be:
 - An Java application with a command-line interface (CLI)
 - A library, intended to inform other applications
 - A web application
+- A shell script
 
 Each of these kinds of projects will typically be initialized in different ways.
 
@@ -41,12 +42,12 @@ Each of these kinds of projects will typically be initialized in different ways.
 - Continue per one of the options described below.
     - [To create a library project](#to-create-a-library-project)
         - [With `neil` under the Clojure CLI](#with-neil-under-the-clojure-cli-lib)
-        - (Watch this space for leiningen)
+        - [With `Leiningen`](#with-lein-lib)
     - [To create a Java application project](#to-create-a-java-application-project)
         - [With `neil` under the Clojure CLI](#with-neil-under-the-clojure-cli-app)
-        - (Watch this space for leiningen)
+        - ([Watch this space for leiningen](https://github.com/ericdscott/ClojureCookbook/issues/7))
     - [To create a web application project](#to-create-a-web-application-project)
-            
+    - [To create a shell script](#to-create-a-shell-script)       
 
 ### To create a library project
 
@@ -84,6 +85,12 @@ $ tree
 
 6 directories, 9 files
 ```
+<a name=with-lein-lib></a>
+### With `Leiningen`
+
+- [Configure your dev environment] to include [Leiningen]
+- `$ lein new lib myStuff/myLib`
+
 
 ### To create a Java application project
 
@@ -119,9 +126,21 @@ $ tree
 6 directories, 9 files
 ```
 
+<a name=with-lein-app></a>
+### With `Leiningen`
+
+- [Configure your dev environment] to include [Leiningen]
+- `$ lein new app myStuff/myApp`
+
+
 ### To create a web application project
 
-- Watch this space for discusson of [Luminus] and [kit-clj].
+- [Watch this space](https://github.com/ericdscott/ClojureCookbook/issues/8) for discusson of [Luminus] and [kit-clj].
+
+### To create a shell script
+
+- [Watch this space](https://github.com/ericdscott/ClojureCookbook/issues/9) for a discussion of [Babashka].
+
 
 ## Associated tools
 - [Clojure CLI]
@@ -143,6 +162,7 @@ $ tree
   - Clojure CLI-centric
   
 ---
+[Babashka]:https://babashka.org/
 [Boot]:https://boot-clj.github.io/
 [Clojure CLI]:https://clojure.org/guides/deps_and_cli
 [Configure your dev environment]:./ToConfigureYourDevEnvironment.md

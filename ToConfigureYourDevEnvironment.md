@@ -34,6 +34,10 @@ This is largely subjective, but factors to consider are... (watch this space).
       - Inspect the set of installed tools with `clojure -Ttools list`
       - [Install the tool] with `clojure -Ttool install ...`
 
+- Under Leiningen
+  - ([Watch this space](https://github.com/ericdscott/ClojureCookbook/issues/16))
+
+
 [Define an alias]:./ToDefineAnAliasInDepsEdn.md
 [Identify apppropriate utiities]:./ToIdentifyDevelopmentTools.md
 [Install the Clojure CLI]:./ToInstallTheClojureCli.md
