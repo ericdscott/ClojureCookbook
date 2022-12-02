@@ -15,6 +15,8 @@ You have created and published a well-tested and well-documented project in Cloj
 
 
 ## Otherwise
+- [Connect with the Clojure community]
+- [Set up your dev environment]
 - [Create a clojure project]
 - [Manage dependencies for your project]
 - [Develop your code]
@@ -26,8 +28,10 @@ You have created and published a well-tested and well-documented project in Cloj
 
 [Create a clojure project]:./ToCreateAClojureProject.md
 [Develop your code]:./ToDevelopYourCode.md
+[Connect with the Clojure community]:./ToConnectWithTheClojureCommunity.md
 [Manage dependencies for your project]:./ToManageDependencies.md
 [Publish your code and other artifacts]:./ToPublishYourCodeAndArtifacts.md
+[Set up your dev environment]:./ToConfigureYourDevEnvironment.md
 [Write and execute tests with good coverage]:./ToWriteAndExecuteTests.md
 [Write clear documentation]:./ToManageDocumentation.md
 [run its tests]:./ToWriteAndExecuteTests.md
