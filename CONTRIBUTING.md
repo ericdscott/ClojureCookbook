@@ -70,12 +70,6 @@ To avoid wasted duplication of effort, please make sure there is an
 issue dedicated to the change you are looking to implement, and
 use the issue's messaging utility to discuss it in advance. 
 
-The preferred sequence of events would be:
-- A draft of documentation relating to the change (in the issue)
-- Sketches of the pertinent test(s) (in the issue)
-- The actual PR, which would include finalized versions of the two
-  points above.
-
 ## Code of conduct
 
 Be nice.
