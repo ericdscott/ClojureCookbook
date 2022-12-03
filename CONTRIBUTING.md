@@ -18,7 +18,7 @@ makes sense:
   - Consider editing your `Supports` page(s) to point down to your
     page, providing a bit of context.
   - We should be able to follow `Supports` links up to the main
-    `ToDevelopYourCode.md` page.
+    [ToCreateSoftware.md] page.
 - Include a <b>Done when:</b> section, briefly describing the
   circumstances under which your goal will be satisfied.
   - Include a <b>Some ways to confirm this</b> subsection, enumerating
@@ -80,3 +80,4 @@ guidelines](https://www.contributor-covenant.org/version/2/0/code_of_conduct/).
 For complaints, please contact Eric Scott at {first-name}.{last-name}@acm.org.
 
 [issue]:https://github.com/ericdscott/ClojureCookbook/issues/
+[ToCreateSoftware.md]:./ToCreateSoftware.md
