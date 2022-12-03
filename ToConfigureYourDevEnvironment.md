@@ -9,8 +9,8 @@ using the two most popular managers, the Clojure CLI, and Leiningen.
 
 There are also full-featured editors and IDEs. Traditionally using
 [Cider under Emacs](#emacs-cider) has been popular among Clojurians,
-but VI(#vi) also has tooling. Under VS Code the Calva(#calva) project
-is gaining popularity. Under IntelliJ, Cursive(#cursive) is the usual
+but [VI](#vi) also has tooling. Under VS Code the [Calva](#calva) project
+is gaining popularity. Under IntelliJ, [Cursive](#cursive) is the usual
 plugin.
 
 ## Supports
@@ -46,7 +46,7 @@ Typically you should find it easy to do the usual repetive tasks, for example:
 ## To configure the Clojure CLI
 
   - [Install the Clojure CLI]
-  - Your project should contain a `deps.edn` file
+  - Your project is configured with a `deps.edn` file
   - [Identify apppropriate utiities] to enhance your programming experience
   - Documentation for this utility should tell you whether is is
     invoked with a `-M` `-X` `-A` or `-T` option
@@ -65,7 +65,7 @@ Typically you should find it easy to do the usual repetive tasks, for example:
 ## To configure Leiningen
 
   - [Install Leiningen](#to-install-leiningen)
-  - There should be a file in your project directory called `project.clj`
+  - Your project is configured with a  `project.clj` file
   - [Identify plugins](#finding-leiningen-plugins) to enhance your
     programming experience
   - [Add said plugins](#adding-leiningen-plugins)
@@ -78,12 +78,15 @@ https://leiningen.org/ is the homepage. It is well-documented. See the
 `Install` section.
 
 ### Leiningen Plugins
+
+Leiningen has been around for a long time, and there are _many_
+plugins to automate various development tasks.
+
 #### Finding Leiningen plugins
 
 Consult [the Leiningen plugins listing].
 
 #### Adding Leiningen plugins
-
 
 Plugins are typically added to your `~/.lein/profiles.clj` file using
 this pattern...
@@ -130,14 +133,6 @@ tweaked and even re-programmed. Here is a good starting place:
 
 https://docs.cider.mx/cider/config/basic_config.html
 
-
-## To configure `vim`
-
-Here is a blog post that may be helpful:
-https://www.deepbluelambda.org/programming/clojure/programming-clojure-with-vim
-
-Elaboration on this section by someone with experience in this area is most welcome.
-
 ## To configure Calva
 
 This is an extension to VS Code which is gaining popularity.
@@ -147,7 +142,14 @@ https://calva.io/
 Calva can be extended and customized in using Clojure code with
 [Joyride](https://calva.io/joyride/).
 
-Elaboration on this section by someone with experience in this area is most welcome.
+[Watch this space](https://github.com/ericdscott/ClojureCookbook/issues/19) for more details
+
+## To configure `vim`
+
+Here is a blog post that may be helpful:
+https://www.deepbluelambda.org/programming/clojure/programming-clojure-with-vim
+
+[Watch this space](https://github.com/ericdscott/ClojureCookbook/issues/18) for more details.
 
 ## To configure Cursive
 
@@ -155,7 +157,7 @@ This is a reasonably-priced extension with a generous free trial period for deve
 
 https://cursive-ide.com/
 
-Elaboration on this section by someone with experience in this area is most welcome.
+[Watch this space](https://github.com/ericdscott/ClojureCookbook/issues/20) for more details.
 
 
 [Creating Software with Clojure]:ToCreateSoftware.md

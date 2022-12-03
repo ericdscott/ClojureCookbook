@@ -19,5 +19,6 @@ The entry point for this is [How to Create Software with Clojure].
 - https://github.com/clojure-cookbook/clojure-cookbook
 - http://clojuredocs.org/
 - https://rosettacode.org/wiki/Category:Clojure
+- https://github.com/scicloj/clojure-data-cookbook/blob/main/outline-draft.md
 
 [How to Create Software with Clojure]:./ToCreateSoftware.md
