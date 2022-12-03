@@ -1,11 +1,5 @@
 # To Create a Clojure Project
 
-## Contents
-- [Supports](#supports)
-- [Done when](#done-when)
-- [Otherwise](#otherwise)
-- [Associated tools](#associated-tools)
-
 The first step in developing a software is to create a project in your
 dev environment.
 
