@@ -62,6 +62,9 @@ search for any namespaces it sees referenced in your code.
     - [Use reader conditionals] to break out special cases between the two platforms.
       - eg: `(def cljc-error #?(:clj Exception :cljs js/Error))`
 
+Note that while the name of the namespace is my-project.core the name
+of the file is my_project.core, reflecting Java's syntax for naming
+classpaths.
 
 [verified group names]:https://github.com/clojars/clojars-web/wiki/Verified-Group-Names
 [Developing your code]:./ToDevelopYourCode.md
