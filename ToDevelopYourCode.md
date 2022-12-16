@@ -22,7 +22,7 @@ Creating software naturally involves writing your source code.
 - Manage errors
 - Troubleshoot as needed
 
-[Create source files with appropriate namespaces]:./ToManageSourceFiles.md
+[Create source files with appropriate namespaces]:./ToCreateSourceFiles.md
 [Creating software with Clojure]:./ToCreateSoftware.md
 
 
