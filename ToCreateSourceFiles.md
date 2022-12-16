@@ -1,4 +1,4 @@
-# To Manage Source Files
+# To Create Source Files
 
 Writing code naturally requires creation of source files. In clojure
 these files are associated with namespaces, which typically map to the
