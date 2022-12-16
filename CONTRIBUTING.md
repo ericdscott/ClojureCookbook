@@ -44,6 +44,35 @@ makes sense:
   doesn't fit neatly in the process described above.
 - Consider closing with a <b>See also</b> section. 
 
+### Starter Template
+
+```
+# To <do something>
+
+<preamble>
+
+## Supports
+- <some parent goal>
+- <some other parent goal>
+
+## Done when
+- <description of when you're done>
+
+### Some ways to confirm this
+- <description or better yet a link to directions>
+
+## Otherwise
+- <do this>
+- <do that>
+
+## <specific elaborations here>
+
+## Special cases
+
+## See Also
+
+```
+
 ### Don't have time to do all this?
 - Copying and pasting an example or pasting a good link is *much*
   better than nothing.

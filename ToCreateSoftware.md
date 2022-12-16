@@ -1,4 +1,4 @@
-# How to Create Software with Clojure
+# To Create Software with Clojure
 
 Clojure is a very expressive medium with which to create software.
 
